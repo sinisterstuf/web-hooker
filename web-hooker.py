@@ -3,6 +3,6 @@
 import json
 import sys
 
-payload = dict(zip(('old', 'new', 'ref'), sys.stdin.read().split()))
+payload = dict(zip(('before', 'after', 'ref'), sys.stdin.read().split()))
 
 print(json.dumps(payload))
